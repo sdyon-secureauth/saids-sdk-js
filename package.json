@@ -1,0 +1,13 @@
+{
+    "name": "saids-sdk-js",
+    "version": "1.0.0",
+    "description": "SecureAuth IDS SDK for JavaScript",
+    "main": "SecureAuth.js",
+    "exports": "./SecureAuth.js",
+    "author": "Sean Dyon",
+    "license": "MIT",
+    "dependencies": {
+        "axios": ">=0.21.1",
+        "dotenv": "^8.2.0"
+    }
+}
