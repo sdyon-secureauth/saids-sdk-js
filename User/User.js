@@ -14,6 +14,7 @@ class UserEndpoint {
 
      }
 
+     // Models.User
      createUser = async (userObject) => {
 
         //AuxID1 needed for support with IdP
@@ -23,7 +24,7 @@ class UserEndpoint {
                 "urn:ietf:params:scim:schemas:extension:secureauth:2.0:User",
                 "urn:ietf:params:scim:schemas:extension:ldap:2.0:User"
             ],
-            "userName": userObject.user,
+            "userName": userObject.userName,
             "password": userObject.password,
             "emails": [
             {
@@ -34,8 +35,8 @@ class UserEndpoint {
             }
         ],
         "name": {
-            "familyName": userObject.lastName,
-            "givenName": userObject.firstName
+            "familyName": userObject.familyName,
+            "givenName": userObject.givenName
         },
             "urn:ietf:params:scim:schemas:extension:secureauth:2.0:User": {
                 "status": "staged"
